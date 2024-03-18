@@ -18,14 +18,20 @@
         height: 100vh;
       }
       .progress {
-        width: 50%;
+        width: 100%;
       }
     </style>
   </head>
   <body dir="rtl">
     <div class="container text-center">
-      <label for="inputText">أكتب الكلام :</label>
-      <textarea id="inputText" name="inputText" rows="4" cols="50"></textarea>
+      <label for="inputText">أكتب التعليق :</label>
+      <textarea
+        id="inputText"
+        name="inputText"
+        rows="4"
+        class="form-control"
+        placeholder="التعليق للفحص . . . "
+      ></textarea>
       <button onclick="sendData()" class="btn btn-primary mt-3">افحص</button>
       <br /><br />
       <label for="LABEL_0">جيد بنسبة : </label>
